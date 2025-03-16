@@ -33,7 +33,7 @@ def create_pdf_report(question, answer, output_path="answer_report.pdf"):
     pdf.multi_cell(190, 10, txt=question)
     pdf.cell(200, 10, txt="Answer:", ln=True)
     pdf.multi_cell(190, 10, txt=answer)
-    output_path = r"\Downloads\answer_report.pdf"
+    output_path = r"C:\Users\chkal\Downloads\answer_report.pdf"
     pdf.output(output_path)
     print(f"Report saved to {output_path}")
 
@@ -50,7 +50,7 @@ def process_pdf_question(pdf_path, question, output_report=True):
     return answer
 
 # Example usage:
-path = r"\Downloads\PDF1.pdf"
+path = r"C:\Users\chkal\Downloads\PDF1.pdf"
 pdf_file = path
 user_question = "What is the main topic of the document?"
 
